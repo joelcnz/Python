@@ -28,7 +28,7 @@ updown = 0.0
 swingSize = 10
 yoffSet = 0.0
 
-def drawStuff():
+def processAndDrawStuff():
     # Draw on the screen a line from (0,0) to (100,100)
     # 5 pixels wide.
     yoffSet = math.sin(updown) * swingSize
@@ -56,7 +56,7 @@ while not done:
     # 5 pixels wide.
     
     yoffSet = math.sin(updown) * swingSize
-    drawStuff()
+    processAndDrawStuff()
     #pygame.draw.line(screen, GREEN, [x, y + yoffSet], [x + 100, y + 100 + yoffSet], 5)
     # --- Drawing code should go here
     #x += 2
